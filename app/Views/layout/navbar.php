@@ -1,26 +1,36 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-info">
-	<a class="navbar-brand" href="<?= base_url('home') ?>">Beranda</a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-	<div class="collapse navbar-collapse" id="navbarNavDropdown">
-		<ul class="navbar-nav">
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Menu
-				</a>
-				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-					<a class="dropdown-item" href="<?= base_url('about') ?>"><i class="fas fa-bullhorn"></i>&nbsp;&nbsp;Tentang Semnas</a>
-					<?php if (logged_in()) : ?>
-						<a class="dropdown-item" href="<?= base_url('admin') ?>"><i class="fas fa-th-list"></i>&nbsp;&nbsp;Kelola Data</a>
-						<a class="dropdown-item" href="<?= base_url('logout') ?>"><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;Logout Admin</a>
-					<?php else : ?>
-						<a class="dropdown-item" href="<?= base_url('registry') ?>"><i class="fas fa-user-edit"></i>&nbsp;&nbsp;Registrasi Semnas</a>
-						<a class="dropdown-item" href="<?= base_url('semnas') ?>"><i class="fas fa-th-list"></i>&nbsp;&nbsp;Peserta Semnas</a>
-						<a class="dropdown-item" href="<?= base_url('login') ?>"><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;Login Admin</a>
-					<?php endif; ?>
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top d-flex align-items-center">
+			<div class="container d-flex align-items-center justify-content-between">
+				<div class="logo">
+					<a href="/">
+						<img class="img-fluid" src="<?= base_url('./frontend/assets/img/icon-dark.png') ?>" alt="" />
+						Lab Teknik Digital
+					</a>
 				</div>
-			</li>
-		</ul>
-	</div>
-</nav>
+
+				<nav id="navbar" class="navbar">
+					<ul>
+						<li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+						<li class="dropdown">
+							<a href="#">
+								<span>Praktikum</span> <i class="bi bi-chevron-down"></i>
+							</a>
+							<ul>
+								<li><a href="#">Teknik Digital</a></li>
+								<li><a href="#">Embedded System</a></li>
+								<li><a href="#">Elektronika Digital</a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="nav-link scrollto" href="#tentang">Tentang</a>
+						</li>
+						<li>
+							<a class="getstarted scrollto" href="#praktikum">Get Started</a>
+						</li>
+					</ul>
+					<i class="bi bi-list mobile-nav-toggle"></i>
+				</nav>
+				<!-- .navbar -->
+			</div>
+		</header>
+		<!-- End Header -->

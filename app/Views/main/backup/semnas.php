@@ -32,7 +32,7 @@
 					</form>
 				</form>
 				<form class="form-inline">
-					<?= $pager->links('semnas', 'semnas_pagination') ?>
+					<?= $pager->links('semnas', 'pagination') ?>
 				</form>
 			</nav>
 

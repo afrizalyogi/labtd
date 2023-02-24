@@ -73,7 +73,7 @@
                                 </div>
                             </div>
                             <div class="btn-group" role="group" aria-label="pagination" style="margin-top: 10px;">
-                                <?= $pager->links('semnas', 'semnas_pagination') ?>
+                                <?= $pager->links('semnas', 'pagination') ?>
                             </div>
                         </div>
                     </form>

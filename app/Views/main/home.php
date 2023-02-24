@@ -104,7 +104,7 @@
 					<div class="row">
 						<div
 							class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
-							<a href="prak-td.html">
+							<a href="<?= base_url('praktd') ?>">
 								<div class="icon-box" data-aos="fade-up" data-aos-delay="200">
 									<div class="icon"><i class="bx bx-file"></i></div>
 									<h4 class="title">Praktikum Teknik Digital</h4>
@@ -118,7 +118,7 @@
 
 						<div
 							class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
-							<a href="prak-embedded.html">
+							<a href="<?= base_url('prak-embedded') ?>">
 								<div class="icon-box" data-aos="fade-up" data-aos-delay="300">
 									<div class="icon"><i class="bx bx-tachometer"></i></div>
 									<h4 class="title">Praktikum Embedded System</h4>
@@ -132,7 +132,7 @@
 
 						<div
 							class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
-							<a href="prak-eldig.html">
+							<a href="<?= base_url('prak-eldig') ?>">
 								<div class="icon-box" data-aos="fade-up" data-aos-delay="400">
 									<div class="icon"><i class="bx bx-world"></i></div>
 									<h4 class="title">Praktikum Elektronika Digital</h4>

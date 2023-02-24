@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-		<title>Laboratorium Teknik Digital - Universitas Lampung</title>
+		<title><?= $this->renderSection('title'); ?> Laboratorium Teknik Digital - Universitas Lampung</title>
 		<meta content="" name="description" />
 		<meta content="" name="keywords" />
 
@@ -43,8 +43,8 @@
 
 	<?= $this->include('layout/footer'); ?>
 
-	<!-- Vendor JS Files -->
-	<script src="./frontend/assets/vendor/aos/aos.js"></script>
+		<!-- Vendor JS Files -->
+		<script src="./frontend/assets/vendor/aos/aos.js"></script>
 		<script src="./frontend/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 		<script src="./frontend/assets/vendor/glightbox/js/glightbox.min.js"></script>
 		<script src="./frontend/assets/vendor/swiper/swiper-bundle.min.js"></script>

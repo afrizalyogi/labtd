@@ -1,6 +1,6 @@
 <?= $this->extend('layout/template'); ?>
 <?= $this->section('title'); ?>
-Praktikum Teknik Digital |
+Praktikum Embedded System |
 <?= $this->endSection(); ?>
 <?= $this->section('content'); ?>
 <main id="main">
@@ -8,10 +8,10 @@ Praktikum Teknik Digital |
 			<section class="breadcrumbs">
 				<div class="container">
 					<div class="d-flex justify-content-between align-items-center">
-						<h2>Praktikum Teknik Digital</h2>
+						<h2>Praktikum Embedded System</h2>
 						<ol>
 							<li><a href="<?= base_url('home') ?>">Home</a></li>
-							<li>Praktikum Teknik Digital</li>
+							<li>Praktikum Embedded System</li>
 						</ol>
 					</div>
 				</div>
@@ -24,7 +24,7 @@ Praktikum Teknik Digital |
 						<div class="col">
 							<div class="info">
 								<h2>
-									Peserta Praktikum Teknik Digital 2023
+									Peserta Praktikum Embedded System 2023
 								</h2>
 							</div>
 							<br />
@@ -76,7 +76,7 @@ Praktikum Teknik Digital |
 									</thead>
 									<tbody>
 									<?php $i = 1 + (10 * ($curpage - 1)); ?>
-									<?php foreach ($prak_td as $dt) : ?>
+									<?php foreach ($prak_embedded as $dt) : ?>
 										<tr>
 											<th scope="row"><?= $i++; ?></th>
 											<td><?= $dt['npm']; ?></td>
@@ -87,7 +87,7 @@ Praktikum Teknik Digital |
 								</table>
 							</div>
 							<form class="form-inline">
-								<?= $pager->links('praktd', 'pagination') ?>
+								<?= $pager->links('prakembedded', 'pagination') ?>
 							</form>
 						</div>
 					</div>
@@ -102,7 +102,7 @@ Praktikum Teknik Digital |
                             </button>
                         </div>
 
-                        <form action="<?= base_url('praktd/save'); ?>" method="POST">
+                        <form action="<?= base_url('prakembedded/save'); ?>" method="POST">
                             <?= csrf_field(); ?>
                             <div class="modal-body">
                                 <div class="form-group">

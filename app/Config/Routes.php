@@ -33,7 +33,12 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-$routes->get('/about', 'Home::about');
+$routes->get('/praktd', 'PrakTD::index');
+$routes->get('/praktd/save', 'PrakTD::save');
+$routes->get('/prakembedded', 'PrakEmbedded::index');
+$routes->get('/prakembedded/save', 'PrakEmbedded::save');
+$routes->get('/prakeldig', 'PrakEldig::index');
+$routes->get('/prakeldig/save', 'PrakEldig::save');
 $routes->get('/registry', 'Home::registry');
 $routes->get('/update/(:segment)','Home::update/$1');
 $routes->get('/admin/(:num)','Home::delete/$1');

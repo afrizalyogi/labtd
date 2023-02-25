@@ -87,7 +87,7 @@ Praktikum Embedded System |
 								</table>
 							</div>
 							<form class="form-inline">
-								<?= $pager->links('prakembedded', 'pagination') ?>
+								<?= $pager->links('prak_embedded', 'pagination') ?>
 							</form>
 						</div>
 					</div>

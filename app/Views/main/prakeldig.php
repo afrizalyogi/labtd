@@ -87,7 +87,7 @@ Praktikum Elektronika Digital |
 								</table>
 							</div>
 							<form class="form-inline">
-								<?= $pager->links('prakeldig', 'pagination') ?>
+								<?= $pager->links('prak_eldig', 'pagination') ?>
 							</form>
 						</div>
 					</div>

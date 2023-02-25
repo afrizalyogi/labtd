@@ -8,7 +8,7 @@ class PrakTDModel extends Model
 {
     //Inisialisasi
     protected $table = 'prak_td';
-    protected $allowedFields = ['npm','nama'];
+    protected $allowedFields = ['id','npm','nama'];
 
     //Query Read
     public function getData()
